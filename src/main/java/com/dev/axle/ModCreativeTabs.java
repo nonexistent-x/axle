@@ -15,10 +15,11 @@ public class ModCreativeTabs {
 
     // displaying the creative mode tab
     public static final CreativeModeTab AXLE_TAB = FabricCreativeModeTab.builder()
-            .icon(() -> new ItemStack(ModBlocks.TEST_BLOCK))
+            .icon(() -> new ItemStack(ModBlocks.STEEL_BLOCK))
             .title(Component.translatable("creativeTab.axle"))
             .displayItems((params, output) -> {
-                output.accept(ModBlocks.TEST_BLOCK);
+                output.accept(ModBlocks.STEEL_BLOCK);
+                output.accept(ModBlocks.CONCRETE_BLOCK);
             })
             .build();
 

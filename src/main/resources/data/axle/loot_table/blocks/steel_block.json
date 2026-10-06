@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "axle:test_block"
+          "name": "axle:steel_block"
         }
       ],
       "conditions": [

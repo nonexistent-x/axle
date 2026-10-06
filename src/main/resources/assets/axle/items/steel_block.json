@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "axle:block/test_block"
+    "model": "axle:block/steel_block"
   }
 }

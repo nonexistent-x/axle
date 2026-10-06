@@ -7,16 +7,23 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
 import java.util.function.Function;
 
 public class ModBlocks {
 
-    public static final Block TEST_BLOCK = register(
-            "test_block",
+    public static final Block STEEL_BLOCK = register(
+            "steel_block",
             Block::new,
-            BlockBehaviour.Properties.of().strength(2.0f)
+            BlockBehaviour.Properties.of().strength(4.0f, 6.0f).sound(SoundType.METAL)
+    );
+
+    public static final Block CONCRETE_BLOCK = register(
+            "concrete_block",
+            Block::new,
+            BlockBehaviour.Properties.of().strength(3.0f, 5.0f).sound(SoundType.CALCITE)
     );
     private static Block register(String name,
                                   Function<BlockBehaviour.Properties, Block> factory,

@@ -23,6 +23,7 @@ public class Axle implements ModInitializer {
 
 		LOGGER.info("Hello Fabric world!");
 		ModBlocks.init(); // the function that registers our blocks
+		ModCreativeTabs.init(); // the function from ModCreativeTabs that registers our creative tab
 	}
 
 	public static Identifier id(String path) {
